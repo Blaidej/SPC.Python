@@ -1,0 +1,12 @@
+# Programming Assignment:Programming Project 3 - System Administration
+# Course: 1523 Spring 2017
+# Meetings: Monday 12:00p to 2:00p
+# Student Name: Blaine Jacques  
+# Instructor: Sheaffer
+# Assignment Description: Network professionals and systems administrators are
+# frequently asked to develop statistics from system log files and system
+# configuration files. This program will analyze such files and give statistics
+# concerning system reliability issues. 
+
+
+

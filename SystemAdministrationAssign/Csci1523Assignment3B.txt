@@ -1,0 +1,135 @@
+# Programming Assignment:Programming Project 3 - System Administration
+# Course: 1523 Spring 2017
+# Meetings: Monday 12:00p to 2:00p
+# Student Name: Blaine Jacques  
+# Instructor: Sheaffer
+
+# Assignment Description: Network professionals and systems administrators are
+# frequently asked to develop statistics from system log files and system
+# configuration files. This program will analyze such files and give statistics
+# concerning system reliability issues. This is an analysis of the logindata
+# file
+
+
+#These lines will open the seperate files to write to to make the
+#data contained within logindata easier to consume for other
+#operations
+try:
+    outputW = open('warrenS.dat','w')
+    outputJ = open('jwood.dat','w')
+    outputR = open('systemReboot.dat','w')
+    outputO = open('otherInfo.dat','w')
+except IOError:
+    print('Error opening file, logindata.dat')
+
+#this sets a buffer, opens the file and only reads a certain amount of
+#lines to the buffer while also storing the respective users into
+#their respective files.
+
+bufsize = 50536
+with open('logindata.dat') as infile: 
+    while True:
+        lines = infile.readlines(bufsize)
+        if not lines:
+            break
+        for line in lines:
+            #an elif chain, sorting the output to different files
+            if 'warren' in line:
+                outputW.write(line)
+            elif 'jwoodcock' in line:
+                outputJ.write(line)
+            elif 'reboot' in line:
+                outputR.write(line)
+            else:
+                outputO.write(line)
+
+
+#closing the file writing output
+outputW.close()
+outputJ.close()
+outputR.close()
+outputO.close()
+
+
+#reopening the files for reading
+try:
+    outputW = open('warrenS.dat','r')
+    outputJ = open('jwood.dat','r')
+    outputR = open('systemReboot.dat','r')
+    outputO = open('otherInfo.dat','r')
+except IOError:
+    print('Error opening file, logindata.dat')
+
+#This function takes and reads the files user a buffer, to not overwhelm the
+#computer, and takes a filename in which to open, and takes a string as
+#an argument to find within the file and return the count of such argument
+
+def fileInfo(fileName, question):
+    bufsize = 50536
+    count = 0
+    with open(fileName) as infile: 
+        while True:
+            lines = infile.readlines(bufsize)
+            if not lines:
+                break
+            for line in lines:
+                if question in line:
+                    count += 1
+    return count
+
+
+#sets a variable to find the fileInfo of each file.
+qTwo = (fileInfo('systemReboot.dat', 'reboot'))
+qThree =(fileInfo('systemReboot.dat', 'system boot'))
+qFour = (fileInfo('warrenS.dat', 'warren'))
+qFive = (fileInfo('jwood.dat', 'jwoodcock'))
+otherUsers = (fileInfo('otherInfo.dat', ' '))
+
+
+#print statements for user analysis of the file.
+print('1. The total number of records in the file: ',
+      (qTwo + qThree + qFour + qFive + otherUsers))
+
+print('2. The number of times the system was rebooted: ',(qTwo))
+
+print('3. The number of times the system was brought up: ',(qThree))
+
+print('4. The number of times the user warren logged in: ',(qFour))
+
+print('5. The number of times the user jwoodcock logged in: ',(qFive))
+
+
+#takes the user warren's file and puts the information into a list for
+#us to use the index's to find out the oldest and most recent
+#log in
+j = 0
+bufsize = 65536
+warrenList = []
+warrenOldest = []
+warrenRecent = []
+with open('warrenS.dat') as infile: 
+    while True:
+        lines = infile.readlines(bufsize)
+        if not lines:
+            break
+        for line in lines:
+            warrenList.append(lines[j])
+            j += 1
+
+#puts the index of warren's, oldest and most recent, and puts it into another
+# list for slicing
+warrenOldest = (warrenList[0])
+
+warrenRecent = warrenList[220]
+
+#takes and slices the date out of the oldest and most recent records
+print('6. The most first login of user warren was: ',warrenRecent[40:50])
+
+print('7. The last login of user warren for these records was: ',
+      warrenOldest[40:50])
+
+#close the files 
+outputW.close()
+outputJ.close()
+outputR.close()
+outputO.close()

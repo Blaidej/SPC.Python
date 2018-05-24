@@ -1,0 +1,274 @@
+root:x:0:0:Super-User:/root:/usr/bin/bash
+daemon:x:1:1::/:
+bin:x:2:2::/usr/bin:
+sys:x:3:3::/:
+adm:x:4:4:Admin:/var/adm:
+lp:x:71:8:Line Printer Admin:/:
+uucp:x:5:5:uucp Admin:/usr/lib/uucp:
+nuucp:x:9:9:uucp Admin:/var/spool/uucppublic:/usr/lib/uucp/uucico
+dladm:x:15:65:Datalink Admin:/:
+netadm:x:16:65:Network Admin:/:
+netcfg:x:17:65:Network Configuration Admin:/:
+smmsp:x:25:25:SendMail Message Submission Program:/:
+gdm:x:50:50:GDM Reserved UID:/var/lib/gdm:
+zfssnap:x:51:12:ZFS Automatic Snapshots Reserved UID:/:/usr/bin/pfsh
+upnp:x:52:52:UPnP Server Reserved UID:/var/coherence:/bin/ksh
+xvm:x:60:60:xVM User:/:
+mysql:x:70:70:MySQL Reserved UID:/:
+openldap:x:75:75:OpenLDAP User:/:
+webservd:x:80:80:WebServer Reserved UID:/:
+postgres:x:90:90:PostgreSQL Reserved UID:/:/usr/bin/pfksh
+svctag:x:95:12:Service Tag UID:/:
+unknown:x:96:96:Unknown Remote UID:/:
+nobody:x:60001:60001:NFS Anonymous Access User:/:
+noaccess:x:60002:60002:No Access User:/:
+nobody4:x:65534:65534:SunOS 4.x NFS Anonymous Access User:/:
+aiuser:x:61:61:AI User:/:
+ftp:x:21:21:FTPD Reserved UID:/:
+dhcpserv:x:18:65:DHCP Configuration Admin:/:
+pkg5srv:x:97:97:pkg(5) server UID:/:
+warren:x:100:10:warren:/home/warren:/usr/bin/bash
+workstudy:x:101:10::/export/home/workstudy:/bin/bash
+mfowler:x:102:10::/export/home/mfowler:/bin/bash
+admin:x:104:10::/export/home/admin:/usr/bin/bash
+utwww:x:105:100:ut admin web server user:/tmp:/bin/sh
+vie:x:106:10::/export/home/vie:/bin/bash
+jwoodcock:x:137:10::/export/home/jwoodcock:/bin/bash
+ttasys:x:138:102::/export/home/ttasys:/usr/bin/bash
+ttaserv:x:139:102::/export/home/ttaserv:/usr/bin/bash
+manderson:x:150:10::/export/home/manderson:/bin/bash
+demo:x:297:10::/export/home/demo:/bin/bash
+rfoy:x:440:10::/export/home/rfoy:/bin/bash
+czubiran:x:445:10::/export/home/czubiran:/bin/bash
+ijohnson:x:447:10::/export/home/ijohnson:/bin/bash
+nvasquez:x:448:10::/export/home/nvasquez:/bin/bash
+test:x:644:103::/export/home/test:/usr/bin/bash
+ikeuser:x:67:12:IKE Admin:/:
+S12164269:x:645:103::/export/home/spring15/S12164269:/bin/bash
+S11664689:x:646:103::/export/home/spring15/S11664689:/bin/bash
+S12566705:x:647:103::/export/home/spring15/S12566705:/bin/bash
+S11806041:x:648:103::/export/home/spring15/S11806041:/bin/bash
+S12460199:x:649:103::/export/home/spring15/S12460199:/bin/bash
+S12158288:x:650:103::/export/home/spring15/S12158288:/bin/bash
+S00184923:x:651:103::/export/home/spring15/S00184923:/bin/bash
+S11176843:x:652:103::/export/home/spring15/S11176843:/bin/bash
+S12532650:x:653:103::/export/home/spring15/S12532650:/bin/bash
+S11734322:x:654:103::/export/home/spring15/S11734322:/bin/bash
+S12206410:x:655:103::/export/home/spring15/S12206410:/bin/bash
+S11700829:x:656:103::/export/home/spring15/S11700829:/bin/bash
+S10475539:x:657:103::/export/home/spring15/S10475539:/bin/bash
+S11984946:x:658:103::/export/home/spring15/S11984946:/bin/bash
+S11897833:x:659:103::/export/home/spring15/S11897833:/bin/bash
+S12542851:x:660:103::/export/home/spring15/S12542851:/bin/bash
+S12258657:x:661:103::/export/home/spring15/S12258657:/bin/bash
+S11806244:x:662:103::/export/home/spring15/S11806244:/bin/bash
+S11996785:x:663:103::/export/home/spring15/S11996785:/bin/bash
+S12388973:x:664:103::/export/home/spring15/S12388973:/bin/bash
+S00189598:x:665:103::/export/home/spring15/S00189598:/bin/bash
+S12455376:x:666:103::/export/home/spring15/S12455376:/bin/bash
+S00188409:x:667:103::/export/home/spring15/S00188409:/bin/bash
+S12428347:x:668:103::/export/home/spring15/S12428347:/bin/bash
+S12408254:x:669:103::/export/home/spring15/S12408254:/bin/bash
+S12316880:x:670:103::/export/home/spring15/S12316880:/bin/bash
+S12313171:x:671:103::/export/home/spring15/S12313171:/bin/bash
+S12133265:x:672:103::/export/home/spring15/S12133265:/bin/bash
+S11813116:x:673:103::/export/home/spring15/S11813116:/bin/bash
+S12303456:x:674:103::/export/home/spring15/S12303456:/bin/bash
+S00022667:x:675:103::/export/home/spring15/S00022667:/bin/bash
+S12289053:x:676:103::/export/home/spring15/S12289053:/bin/bash
+S00027870:x:677:103::/export/home/spring15/S00027870:/bin/bash
+S11657421:x:678:103::/export/home/spring15/S11657421:/bin/bash
+S12478052:x:679:103::/export/home/spring15/S12478052:/bin/bash
+S12150956:x:680:103::/export/home/spring15/S12150956:/bin/bash
+S00163774:x:681:103::/export/home/spring15/S00163774:/bin/bash
+S11818011:x:682:103::/export/home/spring15/S11818011:/bin/bash
+S12353736:x:683:103::/export/home/spring15/S12353736:/bin/bash
+S12067051:x:684:103::/export/home/spring15/S12067051:/bin/bash
+S11020945:x:685:103::/export/home/spring15/S11020945:/bin/bash
+S00123280:x:686:103::/export/home/spring15/S00123280:/bin/bash
+S12521856:x:687:103::/export/home/spring15/S12521856:/bin/bash
+S00190574:x:688:103::/export/home/spring15/S00190574:/bin/bash
+S11349275:x:689:103::/export/home/spring15/S11349275:/bin/bash
+S11893051:x:690:103::/export/home/spring15/S11893051:/bin/bash
+S00168507:x:691:103::/export/home/spring15/S00168507:/bin/bash
+S00178214:x:692:103::/export/home/spring15/S00178214:/bin/bash
+S12021004:x:693:103::/export/home/spring15/S12021004:/bin/bash
+S12548301:x:694:103::/export/home/spring15/S12548301:/bin/bash
+S00191637:x:695:103::/export/home/spring15/S00191637:/bin/bash
+S00114925:x:696:103::/export/home/spring15/S00114925:/bin/bash
+S00185312:x:697:103::/export/home/spring15/S00185312:/bin/bash
+S12058400:x:698:103::/export/home/spring15/S12058400:/bin/bash
+S00167643:x:699:103::/export/home/spring15/S00167643:/bin/bash
+S00121719:x:700:103::/export/home/spring15/S00121719:/bin/bash
+S11529577:x:701:103::/export/home/spring15/S11529577:/bin/bash
+S12127673:x:702:103::/export/home/spring15/S12127673:/bin/bash
+S12326627:x:703:103::/export/home/spring15/S12326627:/bin/bash
+S12402354:x:704:103::/export/home/spring15/S12402354:/bin/bash
+S11483532:x:705:103::/export/home/spring15/S11483532:/bin/bash
+S12272606:x:706:103::/export/home/spring15/S12272606:/bin/bash
+S12100925:x:707:103::/export/home/spring15/S12100925:/bin/bash
+S00178915:x:708:103::/export/home/spring15/S00178915:/bin/bash
+S00137403:x:709:103::/export/home/spring15/S00137403:/bin/bash
+S12228582:x:710:103::/export/home/spring15/S12228582:/bin/bash
+S00181400:x:711:103::/export/home/spring15/S00181400:/bin/bash
+S11968643:x:712:103::/export/home/spring15/S11968643:/bin/bash
+S11688218:x:713:103::/export/home/spring15/S11688218:/bin/bash
+S10422000:x:714:103::/export/home/spring15/S10422000:/bin/bash
+S12153837:x:715:103::/export/home/spring15/S12153837:/bin/bash
+S00102560:x:716:103::/export/home/spring15/S00102560:/bin/bash
+S11713078:x:717:103::/export/home/spring15/S11713078:/bin/bash
+S10302812:x:718:103::/export/home/spring15/S10302812:/bin/bash
+S11939150:x:719:103::/export/home/spring15/S11939150:/bin/bash
+kthao2:x:906:10::/export/home/kthao2:/usr/bin/bash
+bstumpf:x:932:103::/export/home/bstumpf:/bin/bash
+Kpalafox:x:1144:10::/export/home/Kpalafox:/bin/bash
+s12307740:x:1145:103::/export/home/Spring2016/s12307740:/bin/bash
+s12802974:x:1146:103::/export/home/Spring2016/s12802974:/bin/bash
+s12741827:x:1147:103::/export/home/Spring2016/s12741827:/bin/bash
+s12856076:x:1148:103::/export/home/Spring2016/s12856076:/bin/bash
+s12868293:x:1149:103::/export/home/Spring2016/s12868293:/bin/bash
+s12313187:x:1150:103::/export/home/Spring2016/s12313187:/bin/bash
+s11516794:x:1151:103::/export/home/Spring2016/s11516794:/bin/bash
+s12565432:x:1152:103::/export/home/Spring2016/s12565432:/bin/bash
+s12290631:x:1153:103::/export/home/Spring2016/s12290631:/bin/bash
+s12258244:x:1154:103::/export/home/Spring2016/s12258244:/bin/bash
+s12682686:x:1155:103::/export/home/Spring2016/s12682686:/bin/bash
+s12154032:x:1156:103::/export/home/Spring2016/s12154032:/bin/bash
+s11918112:x:1157:103::/export/home/Spring2016/s11918112:/bin/bash
+s12372223:x:1158:103::/export/home/Spring2016/s12372223:/bin/bash
+s12408283:x:1159:103::/export/home/Spring2016/s12408283:/bin/bash
+s12710184:x:1160:103::/export/home/Spring2016/s12710184:/bin/bash
+s12540819:x:1161:103::/export/home/Spring2016/s12540819:/bin/bash
+s12954342:x:1162:103::/export/home/Spring2016/s12954342:/bin/bash
+s12350311:x:1163:103::/export/home/Spring2016/s12350311:/bin/bash
+s12366238:x:1164:103::/export/home/Spring2016/s12366238:/bin/bash
+s11944724:x:1165:103::/export/home/Spring2016/s11944724:/bin/bash
+s13104171:x:1166:103::/export/home/Spring2016/s13104171:/bin/bash
+s12458101:x:1167:103::/export/home/Spring2016/s12458101:/bin/bash
+s12832344:x:1168:103::/export/home/Spring2016/s12832344:/bin/bash
+s12453327:x:1169:103::/export/home/Spring2016/s12453327:/bin/bash
+s13100603:x:1170:103::/export/home/Spring2016/s13100603:/bin/bash
+s12507122:x:1171:103::/export/home/Spring2016/s12507122:/bin/bash
+s12701495:x:1172:103::/export/home/Spring2016/s12701495:/bin/bash
+s12373660:x:1173:103::/export/home/Spring2016/s12373660:/bin/bash
+s12164269:x:1174:103::/export/home/Spring2016/s12164269:/bin/bash
+s12507287:x:1175:103::/export/home/Spring2016/s12507287:/bin/bash
+s12663036:x:1176:103::/export/home/Spring2016/s12663036:/bin/bash
+s12313176:x:1177:103::/export/home/Spring2016/s12313176:/bin/bash
+s00158123:x:1178:103::/export/home/Spring2016/s00158123:/bin/bash
+s11428128:x:1179:103::/export/home/Spring2016/s11428128:/bin/bash
+s00001438:x:1180:103::/export/home/Spring2016/s00001438:/bin/bash
+s13001068:x:1181:103::/export/home/Spring2016/s13001068:/bin/bash
+s12885447:x:1182:103::/export/home/Spring2016/s12885447:/bin/bash
+s12808033:x:1183:103::/export/home/Spring2016/s12808033:/bin/bash
+s12892643:x:1184:103::/export/home/Spring2016/s12892643:/bin/bash
+s10995253:x:1185:103::/export/home/Spring2016/s10995253:/bin/bash
+s12393840:x:1186:103::/export/home/Spring2016/s12393840:/bin/bash
+s11506330:x:1187:103::/export/home/Spring2016/s11506330:/bin/bash
+s00162708:x:1188:103::/export/home/Spring2016/s00162708:/bin/bash
+s12931838:x:1189:103::/export/home/Spring2016/s12931838:/bin/bash
+s13074566:x:1190:103::/export/home/Spring2016/s13074566:/bin/bash
+s12929518:x:1191:103::/export/home/Spring2016/s12929518:/bin/bash
+s00158596:x:1192:103::/export/home/Spring2016/s00158596:/bin/bash
+s12630864:x:1193:103::/export/home/Spring2016/s12630864:/bin/bash
+s12984550:x:1194:103::/export/home/Spring2016/s12984550:/bin/bash
+s11875564:x:1195:103::/export/home/Spring2016/s11875564:/bin/bash
+s12588446:x:1196:103::/export/home/Spring2016/s12588446:/bin/bash
+s12231389:x:1197:103::/export/home/Spring2016/s12231389:/bin/bash
+s12483059:x:1198:103::/export/home/Spring2016/s12483059:/bin/bash
+s12397779:x:1199:103::/export/home/Spring2016/s12397779:/bin/bash
+s12631368:x:1200:103::/export/home/Spring2016/s12631368:/bin/bash
+s12843794:x:1201:103::/export/home/Spring2016/s12843794:/bin/bash
+s12492002:x:1202:103::/export/home/Spring2016/s12492002:/bin/bash
+s11512018:x:1203:103::/export/home/Spring2016/s11512018:/bin/bash
+s10980660:x:1204:103::/export/home/Spring2016/s10980660:/bin/bash
+s12709426:x:1205:103::/export/home/Spring2016/s12709426:/bin/bash
+s12173625:x:1206:103::/export/home/Spring2016/s12173625:/bin/bash
+s12688050:x:1207:103::/export/home/Spring2016/s12688050:/bin/bash
+s13092983:x:1208:103::/export/home/Spring2016/s13092983:/bin/bash
+s12959771:x:1209:103::/export/home/Spring2016/s12959771:/bin/bash
+s12025534:x:1210:103::/export/home/Spring2016/s12025534:/bin/bash
+s12860288:x:1211:103::/export/home/Spring2016/s12860288:/bin/bash
+s13024490:x:1212:103::/export/home/Spring2016/s13024490:/bin/bash
+s00191036:x:1213:103::/export/home/Spring2016/s00191036:/bin/bash
+s12118684:x:1214:103::/export/home/Spring2016/s12118684:/bin/bash
+s12871616:x:1215:103::/export/home/Spring2016/s12871616:/bin/bash
+s12959725:x:1216:103::/export/home/Spring2016/s12959725:/bin/bash
+s13097860:x:1217:103::/export/home/Spring2016/s13097860:/bin/bash
+s00154657:x:1218:103::/export/home/Spring2016/s00154657:/bin/bash
+s12826790:x:1219:103::/export/home/Spring2016/s12826790:/bin/bash
+s12791648:x:1220:103::/export/home/Spring2016/s12791648:/bin/bash
+s12832321:x:1221:103::/export/home/Spring2016/s12832321:/bin/bash
+s12793397:x:1222:103::/export/home/Spring2016/s12793397:/bin/bash
+s00173796:x:1223:103::/export/home/Spring2016/s00173796:/bin/bash
+s12725883:x:1224:103::/export/home/Spring2016/s12725883:/bin/bash
+s12841643:x:1225:103::/export/home/Spring2016/s12841643:/bin/bash
+s00179985:x:1226:103::/export/home/Spring2016/s00179985:/bin/bash
+s12853916:x:1227:103::/export/home/Spring2016/s12853916:/bin/bash
+s11490834:x:1228:103::/export/home/Spring2016/s11490834:/bin/bash
+s12850258:x:1229:103::/export/home/Spring2016/s12850258:/bin/bash
+s12771203:x:1230:103::/export/home/Spring2016/s12771203:/bin/bash
+s11436760:x:1231:103::/export/home/Spring2016/s11436760:/bin/bash
+s12425925:x:1232:103::/export/home/Spring2016/s12425925:/bin/bash
+s12877275:x:1233:103::/export/home/Spring2016/s12877275:/bin/bash
+s00137318:x:1234:103::/export/home/Spring2016/s00137318:/bin/bash
+s12367947:x:1235:103::/export/home/Spring2016/s12367947:/bin/bash
+s13057148:x:1236:103::/export/home/Spring2016/s13057148:/bin/bash
+s12898661:x:1237:103::/export/home/Spring2016/s12898661:/bin/bash
+s13035495:x:1238:103::/export/home/Spring2016/s13035495:/bin/bash
+s12875743:x:1239:103::/export/home/Spring2016/s12875743:/bin/bash
+s13085017:x:1240:103::/export/home/Spring2016/s13085017:/bin/bash
+s12759448:x:1241:103::/export/home/Spring2016/s12759448:/bin/bash
+s12425930:x:1242:103::/export/home/Spring2016/s12425930:/bin/bash
+s12481786:x:1243:103::/export/home/Spring2016/s12481786:/bin/bash
+s12853593:x:1244:103::/export/home/Spring2016/s12853593:/bin/bash
+s12773390:x:1245:103::/export/home/Spring2016/s12773390:/bin/bash
+s11467816:x:1246:103::/export/home/Spring2016/s11467816:/bin/bash
+s13021890:x:1247:103::/export/home/Spring2016/s13021890:/bin/bash
+s12730750:x:1248:103::/export/home/Spring2016/s12730750:/bin/bash
+s12760429:x:1249:103::/export/home/Spring2016/s12760429:/bin/bash
+s12277822:x:1250:103::/export/home/Spring2016/s12277822:/bin/bash
+s12087831:x:1251:103::/export/home/Spring2016/s12087831:/bin/bash
+s11114266:x:1252:103::/export/home/Spring2016/s11114266:/bin/bash
+s13011707:x:1253:103::/export/home/Spring2016/s13011707:/bin/bash
+s12479479:x:1254:103::/export/home/Spring2016/s12479479:/bin/bash
+s00155827:x:1255:103::/export/home/Spring2016/s00155827:/bin/bash
+s12466459:x:1256:103::/export/home/Spring2016/s12466459:/bin/bash
+s13054976:x:1257:103::/export/home/Spring2016/s13054976:/bin/bash
+s13099352:x:1258:103::/export/home/Spring2016/s13099352:/bin/bash
+s12914541:x:1259:103::/export/home/Spring2016/s12914541:/bin/bash
+s12697847:x:1260:103::/export/home/Spring2016/s12697847:/bin/bash
+s11933417:x:1261:103::/export/home/Spring2016/s11933417:/bin/bash
+s12658085:x:1262:103::/export/home/Spring2016/s12658085:/bin/bash
+s12307939:x:1263:103::/export/home/Spring2016/s12307939:/bin/bash
+s11523224:x:1264:103::/export/home/Spring2016/s11523224:/bin/bash
+s13060568:x:1265:103::/export/home/Spring2016/s13060568:/bin/bash
+s10549218:x:1266:103::/export/home/Spring2016/s10549218:/bin/bash
+s00190396:x:1267:103::/export/home/Spring2016/s00190396:/bin/bash
+s12985305:x:1268:103::/export/home/Spring2016/s12985305:/bin/bash
+s12998699:x:1269:103::/export/home/Spring2016/s12998699:/bin/bash
+s12918934:x:1270:103::/export/home/Spring2016/s12918934:/bin/bash
+s12508387:x:1271:103::/export/home/Spring2016/s12508387:/bin/bash
+s00116788:x:1272:103::/export/home/Spring2016/s00116788:/bin/bash
+s12993038:x:1273:103::/export/home/Spring2016/s12993038:/bin/bash
+s13103681:x:1274:103::/export/home/Spring2016/s13103681:/bin/bash
+s00154116:x:1275:103::/export/home/Spring2016/s00154116:/bin/bash
+s12975125:x:1276:103::/export/home/Spring2016/s12975125:/bin/bash
+temp1:x:1277:103::/export/home/Spring2016/temp1:/bin/bash
+temp2:x:1278:103::/export/home/Spring2016/temp2:/bin/bash
+temp3:x:1279:103::/export/home/Spring2016/temp3:/bin/bash
+temp4:x:1280:103::/export/home/Spring2016/temp4:/bin/bash
+temp5:x:1281:103::/export/home/Spring2016/temp5:/bin/bash
+temp6:x:1282:103::/export/home/Spring2016/temp6:/bin/bash
+temp7:x:1283:103::/export/home/Spring2016/temp7:/bin/bash
+temp8:x:1284:103::/export/home/Spring2016/temp8:/bin/bash
+temp9:x:1285:103::/export/home/Spring2016/temp9:/bin/bash
+s12428266:x:1286:103::/export/home/Spring2016/s12428266:/bin/bash
+s12430580:x:1287:103::/export/home/Spring2016/s12430580:/bin/bash
+s13109116:x:1288:103::/export/home/Spring2016/s13109116:/bin/bash
+s00054360:x:1289:103::/export/home/Spring2016/s00054360:/bin/bash
+s13110668:x:1290:103::/export/home/Spring2016/s13110668:/bin/bash
+s11646744:x:1291:103::/export/home/Spring2016/s11646744:/bin/bash
+s12904248:x:1292:103::/export/home/Spring2016/s12904248:/bin/bash
+Jeffrey:x:1293:103::/export/home:/usr/bin/bash
+Jeffrey1:x:1294:103::/export/home:/usr/bin/bash

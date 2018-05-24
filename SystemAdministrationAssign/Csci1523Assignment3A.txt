@@ -1,0 +1,137 @@
+# Programming Assignment:Programming Project 3 - System Administration
+# Course: 1523 Spring 2017
+# Meetings: Monday 12:00p to 2:00p
+# Student Name: Blaine Jacques  
+# Instructor: Sheaffer
+# Assignment Description: Network professionals and systems administrators are
+# frequently asked to develop statistics from system log files and system
+# configuration files. This program will analyze such files and give statistics
+# concerning system reliability issues. This is an analysis of the passwd data
+# file
+
+
+#These 4 lines will open the passwd file to read or will tell the
+#user that the file can't be read.
+try:
+    fh = open('passwd.dat','r')
+except IOError:
+    print('Error opening file, passwd.dat')
+
+
+#These 4 lines will read the file until  an empty string is returned,
+#or return an error made while trying to read the file.
+try:
+    filestr = fh.readlines()
+except IOError:
+    print('Error reading file')
+
+#We need a empty list to contain the fields 
+accountName = [] #array for Account Names
+PWD = [] #array for all Passwords or password placeholders
+UID = [] #array for all User ID's
+GID = [] #array for all Group ID's
+description = [] #array for all User ID info/description
+directory = [] #array for all the absolute path directory the user will be at log in.
+shellDir = [] #array for all absolute path of a command or shell
+
+
+#This function does the work for building lists for each field for each line
+#in the passwd.dat file.
+def getFields (arrayName, index):
+    for i in filestr:
+        new = i.split(':')
+        arrayName.append(new[index])
+    return (arrayName)
+
+#make a list of all Account Names
+getFields(accountName, 0)
+
+
+#make a list of all Passwords or password placeholders
+getFields(PWD, 1)
+
+
+#make a list of all User ID's
+getFields(UID, 2)
+
+
+#make a list of all Group ID's
+getFields(GID, 3)
+
+
+#make a list of all User ID info/description
+getFields(description, 4)
+
+
+#make a list of all the absolute path directory the user will be at log in.
+getFields(directory, 5)
+
+
+#make a list of all absolute path of a command or shell.
+getFields(shellDir, 6)
+
+
+#This gets the total number of users in the file by adding them into a list to
+#perform the len method on them, it makes sure to verify that the new name
+#being added isn't already in the list.
+j = 0
+counter = 0
+newNames = []
+for i in accountName:
+    if accountName[j] not in newNames:
+        newNames.append(accountName[j])
+    j += 1
+        
+print('1. The total number of users identified in the file:',len(newNames))
+
+
+#This gets the total number of users in the Systems adminastors group by
+#checking the index of the Group id and if it equals the System adminstrator
+#groups number of '10' it will add them  into a list to
+#perform the len method on them, it makes sure to verify that the new name
+#being added isn't already in the list. 
+
+g = 0
+SysAdminGrp = []
+for i in GID:
+     if GID[g] == '10':
+         if accountName[g] not in SysAdminGrp: 
+             SysAdminGrp.append(accountName[g])
+     g += 1
+
+#print statement for the length of the list of System Adminstrator Group.
+print('2. The number of users belonging to the Systems Administrator',
+      'Group:',len(SysAdminGrp))
+
+#This creates an empty list to contain the different shell groups
+bashShell = []
+shShell = []
+kshShell = []
+noShell = []
+
+#This takes and goes through our list of shell directories and put's them
+#in the corresponding list, depending on what shell they contain. The order
+#in which you order the searching of the shells is important, since 'sh'
+#would pick up 'ksh' and 'bashshells'
+
+for k in range(0, len(shellDir)):
+    if 'ksh' in shellDir[k]:
+        kshShell.append(shellDir[k]) 
+    elif 'bash' in shellDir[k]:
+        bashShell.append(shellDir[k])
+    elif 'sh' in shellDir[k]:
+        shShell.append(shellDir[k])
+    else:
+        noShell.append(shellDir[k])
+
+#Printout for the number of users belonging to each shell.
+print('3a) The number of users configured for the sh shell type'
+      ' are:',len(shShell))
+print('3b) The number of users configured for the ksh shell type'
+      ' are:',len(kshShell))
+print('3c) The number of users configured for the bash shell type'
+      ' are:',len(bashShell))
+print('3d) The number of users configured with no shell type'
+      ' specified are:',len(noShell))
+
+fh.close()
